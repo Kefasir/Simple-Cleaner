@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CUSTOM_MENU</class>
+ <widget class="QDialog" name="CUSTOM_MENU">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>440</width>
+    <height>860</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>440</width>
+    <height>860</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>440</width>
+    <height>860</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+background: #151515;
+color: #FBF9E4;
+}
+QCheckBox{
+font:9pt &quot;Aldrich&quot;;
+font-size: 16pt;
+color: #E2E8F0; 
+font-weight: 300;
+border: 2px dotted #122C4F;
+padding: 10px;
+border-radius: 5px
+}
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #888;
+    border-radius: 4px;
+    background: white;
+}
+
+QCheckBox::indicator:checked {
+    background: #2196F3;
+	border: 2px solid #122C4F
+}
+
+QSpinBox::up-button, QSpinBox::down-button{
+ background-color: #3a3a3a; /* Темный фон кнопок */
+    border: 1px solid #444444; /* Рамка кнопок */
+
+}
+
+
+</string>
+  </property>
+  <widget class="QLabel" name="DEEP_TEXT">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>5</y>
+     <width>471</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+font-size: 20px;
+letter-spacing: 2px;
+font:9pt &quot;Aldrich&quot;;
+font-size: 25pt;
+font-weight: 300;
+background: #151515;
+border-radius: 4px;
+border: 2px solid #122C4F;</string>
+   </property>
+   <property name="text">
+    <string>CUSTOM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="WINDOWS">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>431</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:9pt &quot;Aldrich&quot;;
+font-size: 16pt;
+color:  #5B88E2;
+letter-spacing: 2px;
+font-weight: 300;
+border: 2px solid  #122C4F;
+
+</string>
+   </property>
+   <property name="text">
+    <string>Windows</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxDEEP1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>250</y>
+     <width>410</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string> Error Reports</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxDEEP2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>300</y>
+     <width>410</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string> Crash Dumps</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxDEEP4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>350</y>
+     <width>410</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Shader DX11 Cache</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="CACHE">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>410</y>
+     <width>431</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:9pt &quot;Aldrich&quot;;
+font-size: 16pt;
+color:  #5B88E2;
+letter-spacing: 2px;
+font-weight: 300;
+border: 2px solid  #122C4F;
+
+</string>
+   </property>
+   <property name="text">
+    <string>Cache</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxDEEP5">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>510</y>
+     <width>410</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string> Chrome Cache</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxDEEP6">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>560</y>
+     <width>410</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string> Discord Cache</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="USER">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>620</y>
+     <width>431</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:9pt &quot;Aldrich&quot;;
+font-size: 16pt;
+color:  #5B88E2;
+letter-spacing: 2px;
+font-weight: 300;
+border: 2px solid  #122C4F;
+
+</string>
+   </property>
+   <property name="text">
+    <string>User</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxDEEP7">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>680</y>
+     <width>411</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size: 18px
+</string>
+   </property>
+   <property name="text">
+    <string>Old Downloads</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="Enter_number">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>750</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #151515;
+color: #FBF9E4;
+border: 2px solid  #122C4F;
+font:9pt &quot;Aldrich&quot;;
+font-size: 14pt;
+border-radius: 5px;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::NoButtons</enum>
+   </property>
+   <property name="value">
+    <number>30</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="DELETE_FILES">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>750</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:9pt &quot;Aldrich&quot;;
+font-size: 16pt;
+color:  #5B88E2;
+letter-spacing: 2px;
+font-weight: 300;
+border: 2px solid  #122C4F;
+border-radius: 4px
+</string>
+   </property>
+   <property name="text">
+    <string>Delete files older than:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxFAST1_1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>410</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #888;
+    border-radius: 4px;
+    background: white;
+}
+
+QCheckBox::indicator:checked {
+    background: #2196F3;
+	border: 2px solid #122C4F
+}
+</string>
+   </property>
+   <property name="text">
+    <string> C:/Temp</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxFAST1_2_1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>150</y>
+     <width>410</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #888;
+    border-radius: 4px;
+    background: white;
+}
+
+QCheckBox::indicator:checked {
+    background: #2196F3;
+	border: 2px solid #122C4F
+}
+</string>
+   </property>
+   <property name="text">
+    <string> AppData/Temp</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxFAST1_4_1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>200</y>
+     <width>410</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #888;
+    border-radius: 4px;
+    background: white;
+}
+
+QCheckBox::indicator:checked {
+    background: #2196F3;
+	border: 2px solid #122C4F
+}
+</string>
+   </property>
+   <property name="text">
+    <string> Recycle Bin</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxDEEP5_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>460</y>
+     <width>410</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>NONE</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FAST_MENU</class>
+ <widget class="QDialog" name="FAST_MENU">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+background: #151515;
+color: #FBF9E4;
+}
+QLabel{
+color:white;
+font-size: 20px;
+letter-spacing: 2px;
+font:9pt &quot;Aldrich&quot;;
+font-size: 18pt;
+font-weight: 300;
+background: #5B88E2;
+border-radius: 6px
+}
+
+QCheckBox{
+font:9pt &quot;Aldrich&quot;;
+font-size: 20pt;
+color: #E2E8F0; 
+font-weight: 300;
+border: 2px dotted #122C4F;
+padding: 10px;
+border-radius: 5px
+}
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #888;
+    border-radius: 4px;
+    background: white;
+}
+
+QCheckBox::indicator:checked {
+    background: #2196F3;
+	border: 2px solid #122C4F
+}
+
+</string>
+  </property>
+  <widget class="QLabel" name="FAST_TEXT_2">
+   <property name="geometry">
+    <rect>
+     <x>-5</x>
+     <y>10</y>
+     <width>411</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #E2E8F0; 
+font-size: 20px;
+letter-spacing: 2px;
+font:9pt &quot;Aldrich&quot;;
+font-size: 25pt;
+font-weight: 300;
+background: #151515;
+border-radius: 4px;
+border: 2px solid #122C4F;</string>
+   </property>
+   <property name="text">
+    <string>FAST</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxFAST1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>381</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #888;
+    border-radius: 4px;
+    background: white;
+}
+
+QCheckBox::indicator:checked {
+    background: #2196F3;
+	border: 2px solid #122C4F
+}
+</string>
+   </property>
+   <property name="text">
+    <string> C:/Temp</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxFAST1_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>381</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #888;
+    border-radius: 4px;
+    background: white;
+}
+
+QCheckBox::indicator:checked {
+    background: #2196F3;
+	border: 2px solid #122C4F
+}
+</string>
+   </property>
+   <property name="text">
+    <string> AppData/Temp</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxFAST1_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>260</y>
+     <width>381</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #888;
+    border-radius: 4px;
+    background: white;
+}
+
+QCheckBox::indicator:checked {
+    background: #2196F3;
+	border: 2px solid #122C4F
+}
+</string>
+   </property>
+   <property name="text">
+    <string> Recycle Bin</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
